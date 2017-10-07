@@ -1,6 +1,7 @@
 package com.example.bmicalculator;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.renderscript.Double2;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -57,7 +58,11 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 });
-                dialog.show();
+                //dialog.show();
+                Intent intent = new Intent(MainActivity.this, BmiResultActivity.class);
+                intent.putExtra("bmi_value", bmi);
+                intent.putExtra("bmi_text", bmiText);
+                startActivity(intent);
             }
         });
     }//close onCrete method
@@ -77,5 +82,6 @@ public class MainActivity extends AppCompatActivity {
             bmiText = "น้ำหนักมากกว่าปกติมาก (อ้วน)";
         }
         return bmiText;
+
     }
 } // close MainActivity Class
