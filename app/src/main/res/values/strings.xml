@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">BMI Calculator</string>
+    <string name="app_name">Your Grade</string>
     <string name="height_label">Height (cm)</string>
     <string name="weight_label">Weight (kg)</string>
     <string name="calculate_label">Calculate</string>
-
+    <string name="whatgrade_label">What is your Grade</string>
+    <string name="plzinput_label">Enter your name and score</string>
 </resources>

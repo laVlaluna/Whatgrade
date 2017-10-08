@@ -4,14 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bmicalculator.BmiResultActivity"
-    android:gravity="center">
+    tools:context="com.example.WhatGrade.BmiResultActivity"
+    android:gravity="center"
+    android:background="@drawable/classroom"
+    android:padding="25dp"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
         android:gravity="center"
+        android:background="#A6FFFFFF"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/textViewl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:gravity="center"
+        android:background="#A6FFFFFF"
+        android:layout_weight="10"
+        android:textSize="150dp"
         />
 </LinearLayout>
